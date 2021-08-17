@@ -14,12 +14,12 @@ class SmitchPlugAction(Action):
         }
         url = 'https://app.api.developer.mysmitch.com/v1/app/job/device'
         myobj = {
-            "user_id": userId,
-            "commands": [
+            'user_id': userId,
+            'commands': [
                 {
-                    "device_id": deviceId,
-                    "device_settings": {
-                        "power_status": powerStatus
+                    'device_id': deviceId,
+                    'device_settings': {
+                        'power_status': powerStatus
                     }
                 }
             ]
