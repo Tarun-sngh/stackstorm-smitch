@@ -26,4 +26,4 @@ class SmitchPlugAction(Action):
         }
 
         plug = requests.post(url, data = myobj, headers = header)
-        return(True, plug.status_code, plug.json())
+        return(plug.status_code, plug)

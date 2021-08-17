@@ -15,4 +15,4 @@ class SmitchGetUser(Action):
         url = f"https://app.api.developer.mysmitch.com/​v1​/app​/user?user_id={userId}"
 
         user = requests.get(url, headers = header)
-        return(True, user)
+        return(user.status_code, user)
