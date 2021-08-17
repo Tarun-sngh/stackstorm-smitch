@@ -1,7 +1,7 @@
 pack : "smitch"
 name: "light_bulb"
 runner_type: "python-script"
-description: "create job for a device"
+description: "create job for a light bulb"
 enabled: true
 entry_point: "bulb.py"
 parameters:

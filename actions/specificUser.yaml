@@ -1,7 +1,7 @@
 pack : "smitch"
 name: "specific_user"
 runner_type: "python-script"
-description: "create job for a device"
+description: "get details of a specific user"
 enabled: true
 entry_point: "specificUser.py"
 parameters:
