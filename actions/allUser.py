@@ -6,10 +6,10 @@ import requests
 from st2common.runners.base_action import Action
 
 class SmitchGetUsers(Action):
-    def run(self, xApiKey, userId, deviceId, powerStatus):
+    def run(self, xApiKey):
 
-        auth = {"headers": { "x-api-key": xApiKey } }
+        header= { 'x-api-key': xApiKey }
         url = 'https://app.api.developer.mysmitch.com/​v1​/app​/users'
 
-        users = requests.get(url, auth = auth)
-        return(True,users.status_code, users.json())
+        users = requests.get(url, headers = header)
+        return(True,users)
