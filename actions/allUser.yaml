@@ -1,5 +1,5 @@
 pack : "smitch"
-name: "switch"
+name: "all_user"
 runner_type: "python-script"
 description: "create job for a device"
 enabled: true

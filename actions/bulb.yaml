@@ -1,5 +1,5 @@
 pack : "smitch"
-name: "switch"
+name: "light_bulb"
 runner_type: "python-script"
 description: "create job for a device"
 enabled: true
