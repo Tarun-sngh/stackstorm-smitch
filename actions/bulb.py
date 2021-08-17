@@ -29,4 +29,4 @@ class smitchBulbAction(Action):
         }
 
         light = requests.post(url, data = myobj, auth = auth)
-        return(True, light.status_code, light.json())
+        return(True)
