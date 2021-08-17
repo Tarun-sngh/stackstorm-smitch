@@ -1,6 +1,6 @@
-# import sys
-# import json
-# import dns
+import sys
+import json
+import dns
 import requests
 
 from st2common.runners.base_action import Action
