@@ -12,7 +12,7 @@ class SmitchGetUsers(Action):
             'Accept': 'application/json',
             'x-api-key': xApiKey
         }
-        url = 'https://app.api.developer.mysmitch.com/​v1​/app​/users'
+        url = 'https://app.api.developer.mysmitch.com/v1/app/users'
 
         users = requests.get(url, headers = header)
         return(True,users)
