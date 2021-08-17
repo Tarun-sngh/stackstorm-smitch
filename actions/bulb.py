@@ -5,7 +5,7 @@ import requests
 
 from st2common.runners.base_action import Action
 
-class MyEchoAction(Action):
+class smitchBulbAction(Action):
     def run(self, xApiKey, userId, deviceId, powerStatus, delay, red, green, blue):
 
         auth = {"headers": { "x-api-key": xApiKey } }
