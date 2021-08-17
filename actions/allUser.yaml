@@ -1,0 +1,11 @@
+pack : "smitch"
+name: "switch"
+runner_type: "python-script"
+description: "create job for a device"
+enabled: true
+entry_point: "allUser.py"
+parameters:
+    xApiKey:
+        type: "string"
+        description: "api key"
+        required: true

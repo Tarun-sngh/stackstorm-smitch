@@ -1,0 +1,41 @@
+pack : "smitch"
+name: "switch"
+runner_type: "python-script"
+description: "create job for a device"
+enabled: true
+entry_point: "bulb.py"
+parameters:
+    xApiKey:
+        type: "string"
+        description: "api key"
+        required: true
+    userId:
+      type: "string"
+      description: "userId of the user"
+      required: true
+    deviceId:
+      type: "string"
+      description: "deviceId of the device to operate"
+      required: true
+    powerStatus:
+      type: "boolean"
+      description: "True to turn ON and False to turn OFF"
+      default: null
+    delay:
+      type: "integer"
+      description: "delay after which to switch on the light(if opting, minimun delay is 5 with maximum being 86400 seconds)"
+      default: 0
+    red:
+      type: "integer"
+      description: "intensity of red, 0 being the minimum and 255 being the maximum"
+      default: 0
+    blue:
+      type: "integer"
+      description: "intensity of blue, 0 being the minimum and 255 being the maximum"
+      default: 0
+    green:
+      type: "integer"
+      description: "intensity of green, 0 being the minimum and 255 being the maximum"
+      default: 0
+
+    

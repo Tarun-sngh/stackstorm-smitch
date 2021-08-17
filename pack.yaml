@@ -1,0 +1,9 @@
+---
+ref: smitch
+name: smitch
+description: smitch Integration for StackStorm
+version: 1.0.0
+author: shivankittech
+email: tarunsingh2118@gmail.com
+python_versions:
+  - "3"

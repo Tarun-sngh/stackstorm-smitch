@@ -1,0 +1,15 @@
+pack : "smitch"
+name: "switch"
+runner_type: "python-script"
+description: "create job for a device"
+enabled: true
+entry_point: "specificUser.py"
+parameters:
+    xApiKey:
+        type: "string"
+        description: "api key"
+        required: true
+    userId:
+        type: "string"
+        description: "the userId of the user to look up to"
+        required: true
