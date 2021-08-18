@@ -10,12 +10,12 @@ class SmitchPlugAction(Action):
 
         header = {
             'Accept': 'application/json',
-            'x-api-key': xApiKey
+            'x-api-key': 'TEST##bf322a1afa1b4d02986ea4c0bd75251d##eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOiJBUFBfN2E3Yzk0MWVlZjA0NGI0ZGIyMzEyNmNjMjQ1YjdkNWEiLCJzY29wZXMiOlsiKiJdfQ.G7IxzGyoao6h6EdFpD_6a4crELsY6TKYJt94CCs0Guo'
         }
         url = 'https://app.api.developer.mysmitch.com/v1/app/job/device'
         myobj = {
             'user_id': userId,
-            'commands': [
+            'commands':[ 
                 {
                     'device_id': deviceId,
                     'device_settings': {
@@ -25,5 +25,5 @@ class SmitchPlugAction(Action):
             ]
         }
 
-        plug = requests.post(url, data = myobj, headers = header)
+        plug = requests.post(url, json = myobj, headers = header)
         return(True, plug.json())

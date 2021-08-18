@@ -31,5 +31,5 @@ class smitchBulbAction(Action):
             'delay': delay
         }
 
-        light = requests.post(url, data = myobj, headers = header)
+        light = requests.post(url, json = myobj, headers = header)
         return(True, light.json())
