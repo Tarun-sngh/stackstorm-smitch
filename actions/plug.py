@@ -10,7 +10,7 @@ class SmitchPlugAction(Action):
 
         header = {
             'Accept': 'application/json',
-            'x-api-key': 'TEST##bf322a1afa1b4d02986ea4c0bd75251d##eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOiJBUFBfN2E3Yzk0MWVlZjA0NGI0ZGIyMzEyNmNjMjQ1YjdkNWEiLCJzY29wZXMiOlsiKiJdfQ.G7IxzGyoao6h6EdFpD_6a4crELsY6TKYJt94CCs0Guo'
+            'x-api-key': xApiKey
         }
         url = 'https://app.api.developer.mysmitch.com/v1/app/job/device'
         myobj = {
