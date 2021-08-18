@@ -20,11 +20,7 @@ parameters:
     powerStatus:
       type: "boolean"
       description: "True to turn ON and False to turn OFF"
-      default: null
-    delay:
-      type: "integer"
-      description: "delay after which to switch on the light(if opting, minimun delay is 5 with maximum being 86400 seconds)"
-      default: 0
+      required: true
     red:
       type: "integer"
       description: "intensity of red, 0 being the minimum and 255 being the maximum"

@@ -6,7 +6,7 @@ import requests
 from st2common.runners.base_action import Action
 
 class smitchBulbAction(Action):
-    def run(self, xApiKey, userId, deviceId, powerStatus, delay, red, green, blue):
+    def run(self, xApiKey, userId, deviceId, powerStatus, red, green, blue):
 
         header = {
             'Accept': 'application/json',
@@ -27,8 +27,7 @@ class smitchBulbAction(Action):
                         }
                     }
                 }
-            ],
-            'delay': delay
+            ]
         }
 
         light = requests.post(url, json = myobj, headers = header)
