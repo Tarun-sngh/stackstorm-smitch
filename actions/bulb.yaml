@@ -5,7 +5,7 @@ description: "create job for a light bulb"
 enabled: true
 entry_point: "bulb.py"
 parameters:
-    xApiKey:
+    x_api_key:
         type: "string"
         description: "api key"
         required: true
