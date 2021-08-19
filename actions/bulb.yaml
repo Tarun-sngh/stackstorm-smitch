@@ -9,18 +9,26 @@ parameters:
         type: "string"
         description: "api key"
         required: true
-    userId:
+    user_id:
       type: "string"
       description: "userId of the user"
       required: true
-    deviceId:
+    device_id:
       type: "string"
       description: "deviceId of the device to operate"
       required: true
-    powerStatus:
+    power_status:
       type: "boolean"
       description: "True to turn ON and False to turn OFF"
       required: true
+    brightness:
+      type: "integer"
+      description: "Brightness level of the the light bulb, min being 5 and max being 100"
+      default: 0
+    temperature:
+      type: "integer"
+      description: "the temperature of the light, min at 2700 with max at 6500"
+      default: 0
     red:
       type: "integer"
       description: "intensity of red, 0 being the minimum and 255 being the maximum"
@@ -33,5 +41,12 @@ parameters:
       type: "integer"
       description: "intensity of green, 0 being the minimum and 255 being the maximum"
       default: 0
+    delay:
+      type: "integer"
+      description: "the delay to add to the device, rqanges from 5sec to 86400"
+      default: 0
+      
+      
+
 
     
