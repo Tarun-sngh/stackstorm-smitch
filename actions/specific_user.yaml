@@ -5,11 +5,11 @@ description: "get details of a specific user"
 enabled: true
 entry_point: "specificUser.py"
 parameters:
-    xApiKey:
+    x_api_key:
         type: "string"
         description: "api key"
         required: true
-    userId:
+    user_id:
         type: "string"
         description: "the userId of the user to look up to"
         required: true
