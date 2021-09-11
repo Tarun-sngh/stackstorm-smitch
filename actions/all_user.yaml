@@ -5,7 +5,7 @@ description: "get list of all users"
 enabled: true
 entry_point: "allUser.py"
 parameters:
-    xApiKey:
+    x_api_key:
         type: "string"
         description: "api key"
         required: true
